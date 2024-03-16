@@ -1,0 +1,31 @@
+[
+    {
+    "Name": "Crops", 
+    "imag":"https://images.pexels.com/photos/162870/rye-cereals-wheat-nature-162870.jpeg?auto=compress&cs=tinysrgb&w=600 ",
+    "description":"Explore different types of crops suitable for various climates and regions.Learn about modern farming techniques and best practices for crop cultivation.Stay updated on the latest advancements in crop research and innovation" 
+ },
+    { 
+        "Name": "Machinery" ,
+       "imag":"https://images.pexels.com/photos/2933243/pexels-photo-2933243.jpeg?auto=compress&cs=tinysrgb&w=400 " ,
+       "description":"Discover a wide range of agricultural machinery and equipment for efficient farming.Get insights into the functionalities and benefits of different types of farming machinery.Stay informed about the maintenance and usage guidelines for agricultural equipment."
+
+    },
+    {
+        "Name": "News" ,
+       "imag": "https://images.pexels.com/photos/518543/pexels-photo-518543.jpeg?auto=compress&cs=tinysrgb&w=400",
+       "description":"Stay informed with the latest agricultural news, trends, and developments.Access insightful articles, reports, and analysis on the agricultural industry.Stay updated on government policies, market trends, and agricultural events."
+
+    },
+    {
+        "Name": "Schemes" ,
+       "imag":"https://images.tractorgyan.com/uploads/104839/6482ec181d73d_central-government-schemes-for-farmers-in-india.webp",
+       "description":"Learn about government schemes and programs aimed at supporting farmers and agriculture. Get information on subsidies, grants, and incentives available for farmers. Stay informed about eligibility criteria and application procedures for various agricultural schemes."
+
+    },
+    {
+        "Name": "Services",
+       "imag":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbN6BKq1LXoAao8XG8jtjaHqFZ3dOt7zuhYA&usqp=CAU",
+       "description":" Our comprehensive range of agricultural services is designed to address every aspect of farm management, from soil preparation to harvest. Whether you need assistance with crop selection, land preparation, or pest management  With personalized recommendations and ongoing support, we empower farmers to make informed decisions and succeed in today's competitive agricultural landscape."
+
+    }
+]

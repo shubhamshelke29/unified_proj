@@ -1,0 +1,124 @@
+.container {
+    position: relative;
+    height: 65vh;
+}
+
+.slider-container {
+    width: 150vmin;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  
+
+}
+
+.image-container {
+    width: 100%;
+    display: flex;
+    animation: slide 50s ease-in-out infinite;
+    position: relative;
+   
+  
+
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+
+}
+
+#slide-tittle {
+    font-family: "Noto Sans", sans-serif;
+    position: absolute;
+    color: white;
+    font-weight: 900;
+    font-size: 26px;
+    text-align: justify;
+    bottom: 10rem;
+    left: 20rem;
+    transform: translateX(-50%);
+    z-index: 1;
+
+}
+
+#slide-content {
+    font-family: "Noto Sans", sans-serif;
+    width: 100%;
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    text-align: justify;
+    bottom: 5rem;
+    left: 2rem;
+    right: 51rem;
+    padding-right: 50px;
+    z-index: 1;
+
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    10% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-100%);
+    }
+
+    30% {
+        transform: translateX(-100%);
+    }
+
+    40% {
+        transform: translateX(-200%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+
+    60% {
+        transform: translateX(-300%);
+    }
+
+    70% {
+        transform: translateX(-300%);
+    }
+
+    80% {
+        transform: translateX(-400%);
+    }
+
+    100% {
+        transform: translateX(-400%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slider-container {
+        width: 95%; /* Adjust width for smaller screens */
+    }
+    
+    #slide-tittle {
+        font-size: 20px;
+        bottom: 8%;
+        left: 5%; /* Adjust left position */
+    }
+    
+    #slide-content {
+        font-size: 14px;
+        bottom: 4%;
+        left: 5%; /* Adjust left position */
+        right: 5%;
+    }
+}

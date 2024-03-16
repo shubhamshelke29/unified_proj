@@ -1,0 +1,141 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+ body{
+    display: flex;
+}
+/* nav{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}  */
+/* admin_nav.css */
+
+nav {
+    background-color: #333; /* Background color of the navbar */
+    color: #fff; /* Text color */
+    width: 200px; /* Width of the navbar */
+    height:100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  
+  .navtitle {
+    margin-top: 50px;
+    padding: 10px;
+  }
+  
+  .navtitle h3 {
+    margin: 0;
+    font-style:italic ;
+  }
+  
+  .nav-list {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nav_items ul {
+    list-style-type: none; /* Remove bullet points from the list */
+    padding: 0;
+   
+    margin: 0;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .nav_items ul li {
+    padding: 8px 0;
+  }
+  
+  .nav_items ul li a {
+    display: block; /* Make the link take up the entire space of its parent (list item) */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline from the links */
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+  
+  .nav_items ul li a:hover {
+    background-color: #555;
+    border-radius: 15px; /* Background color on hover */
+  }
+  .hamburger {
+    display: none; /* Hide by default */
+    cursor: pointer;
+  }
+  
+  /* Add styles for the bars in the hamburger icon button */
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+  }
+  
+  .logout {
+    background-color: #f44336; /* Background color of the logout button */
+    color: #fff; /* Text color */
+    border: none;
+    padding: 8px 16px;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+  
+  }
+  .logout:hover {
+    background-color: #d32f2f; /* Background color on hover */
+  }
+
+
+  @media screen and (max-width: 768px) {  
+   
+
+    nav {
+        width: 100%; /*Make navbar full width on smaller screens */
+        height: 10vh; /*Remove fixed height */
+         flex-direction: row;
+         align-items: center;
+  
+    }
+    
+    .navtitle {
+      margin-top: 10px;  
+      text-align: center; /* Center align the title */
+    }
+    
+   .nav_items{
+  display: none
+   }
+    .nav_items ul li {
+        padding: 8px; /* Adjust padding */
+    }
+    
+    .logout {
+        margin-top: 10px; /* Adjust margin */
+    }
+    .hamburger {
+      display: block; /* Display the hamburger icon button */
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 999; /* Ensure it's above other content */
+    }
+} 
+  

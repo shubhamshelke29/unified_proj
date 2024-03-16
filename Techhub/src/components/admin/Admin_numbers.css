@@ -1,0 +1,44 @@
+.number_card_container{
+   
+    width: calc(100vw - 200px) !important;
+    display: flex;
+  
+
+}
+.box{
+    height :100px;
+    width:200px;
+    border-radius: 25px;
+   margin:25px;
+   box-shadow: -2px -5px 22px -4px rgba(143,136,143,0.61);
+   transition: all 0.3s ease-in-out;
+}
+.box:hover{
+    transform: scale(1.1);
+}
+
+.box:hover>h2{
+    color: rgb(251, 115, 115);
+
+}
+.box h2{
+ margin: 10px;
+ font-weight: 500;
+ font-size: larger;
+ transition: all 0.3s ease-in-out;
+}
+
+.box h3{
+    margin: 10px;
+}
+@media screen and (max-width: 768px) {
+    .number_card_container {
+        flex-wrap: wrap;
+        
+        
+    }
+    
+    .box {
+        width: 150px;
+    }
+}

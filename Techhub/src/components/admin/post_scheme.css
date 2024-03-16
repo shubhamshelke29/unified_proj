@@ -1,0 +1,65 @@
+.post_container{
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    margin-left:50px ;
+   margin-top: 50px;
+}
+
+.post_title{
+ 
+    height: 50px;
+    width: 500px;
+    margin: 25px 200px 0px 100px;
+    display :flex;
+    justify-content: start;
+    align-items: center;
+  
+
+}
+.post_title>input {
+    height: 40px;
+    width: 60%;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 10px; 
+}
+input[type="text"]
+{
+margin-left: 5px;
+padding-left: 10px; 
+font-weight: bold;
+
+}
+
+
+.post_title input::placeholder{
+    font-style: italic;
+     margin:2px;
+}
+.post{
+    height: 210px;
+    width: 500px;
+    margin: 25px 100px 100px 100px;
+    border-radius: 25px;
+    padding: 25PX;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+   
+   
+}
+.post::placeholder{
+    font-style: italic;
+}
+
+.cp_buttons{
+    
+    display:flex;
+   padding-left: 20%;
+    margin: 0 50px;
+    gap: 50px;
+}

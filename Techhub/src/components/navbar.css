@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+.navbar{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 6rem  1fr 2fr  1fr 1fr 10rem;
+    box-shadow: rgba(50,50,93,0.25) 0px 50px 100px  -20px, rgba(0,0,0,0.3) 0px 30px 60px -30px;
+    position: fixed; 
+    backdrop-filter: blur(10px);
+}
+.navbar-logo{
+    display :flex;
+    grid-column: 2/3;
+    justify-content: start;
+    align-items: center;
+}
+.navbar-item{ 
+    grid-column: 3/5;
+}
+.navbar-item ul {
+    height: 10rem;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;  
+margin-left: 5px;
+    list-style-type: none;
+    gap: 15px;
+}
+.navbar-item ul a {
+    font-size: medium;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 15px 0;   
+    position: relative; /* Required for positioning pseudo-element */
+}
+
+.navbar-item ul a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px; /* Adjust thickness as needed */
+    background-color: rgb(92, 7, 227); /* Change to desired color */
+    transition: width 0.5s ease-in-out; /* Transition for the width */
+}
+
+.navbar-item ul a:hover::after {
+    width: 100%; /* Expands the line to cover the entire text */
+}
+
+
+
+.button{
+    display: flex;
+   
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.login ,.signup {
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "Noto Sans", sans-serif;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+  }
+  
+  .login:focus,.signup:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  }
+  
+  .login:hover,.signup:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  .login:active,.signup:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+  
+
+  .dots {
+    display: none;
+  }
+
+.bar {
+    
+    width: 25px;
+    height: 2px;
+    background-color: #000000;
+    margin: 5px 0;
+    opacity: 0.8;
+    
+}
+
+.dots--open .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.dots--open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.dots--open .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+@media (max-width: 850px) {
+
+    .navbar{
+        width: 100%;
+        height:10rem;
+        display: grid;
+        grid-template-columns: 6rem  1fr 2fr  1fr ;
+        box-shadow: rgba(50,50,93,0.25) 0px 50px 100px  -20px, rgba(0,0,0,0.3) 0px 30px 60px -30px;
+        position: fixed; 
+        backdrop-filter: blur(10px);
+        place-items: center;
+    }
+    .navbar-item{
+       
+            position: absolute;
+            top: 100px;
+            width: 97%;
+            height: 100vh;
+            padding: 10px 0 25px;
+            transform: translateX(200%);
+            transition: transform 0.3s ease;
+            padding-bottom: 50px;
+            backdrop-filter: blur(100px);
+            border-radius: 5px solid;
+            background: rgba(0, 0, 0, 0.8);
+      
+    }
+    .navbar-item ul{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30%;
+        gap: 10px;
+                
+       
+    }
+    .navbar-item ul a{
+        color: #fff;
+        margin-left: 30%;
+    
+    }
+
+    .barcontainer{
+        background-color: #5c69ca;
+        margin: 50%;
+
+    }
+    .signup{
+        display: none;
+    }
+    
+
+
+
+    .dots {
+        display: block;
+        cursor: pointer;
+        
+    }
+
+    
+    .navbar-item ul li {
+    font-size: 25px;
+        width: 102%;
+        height: 60px;
+        margin-left: -5px;
+        margin-right: 0;
+        
+        
+        
+    }
+    .nav--one {
+        transform: translateX(0);
+
+    }
+    .navbar-item ul li:hover {
+        background-color: #fafafa;
+        
+    }
+    .navbar-item ul li:hover a{
+        color: #000000;
+    }
+
+}
+  
