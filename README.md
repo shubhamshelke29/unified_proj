@@ -1,6 +1,6 @@
-TechFarm hub
+Farm Techub
 
-Tech Farm hub is a web application designed to facilitate farmers and users in accessing agricultural information and government schemes seamlessly. This repository contains the source code for the TechFarm hub project.
+Farm Techub is a web application designed to facilitate farmers and users in accessing agricultural information and government schemes seamlessly. This repository contains the source code for the Farm Techub project.
 
 Project Overview
 
@@ -29,14 +29,14 @@ CSS: Styling language for designing the presentation of web pages.
 React: JavaScript library for building user interfaces.
 
 Getting Started
-To set up the TechFarm hub project locally, follow these steps:
+To set up the Farm Techub project locally, follow these steps:
 
 Clone this repository to your local machine.
 
 Copy code
 Navigate to the project directory.
 Copy code
-cd TechFarm Hub
+cd Farm Techub
 Install dependencies using npm or yarn.
 
 Copy code
@@ -53,4 +53,4 @@ Access the application at http://localhost:3000 in your web browser.
 
 Contributing
 
-Contributions to the Techfarm-hub project are welcome! Feel free to submit bug reports, feature requests, or pull requests. Please ensure that any contributions adhere to the project's coding standards and guidelines.
+Contributions to the Farm Techub project are welcome! Feel free to submit bug reports, feature requests, or pull requests. Please ensure that any contributions adhere to the project's coding standards and guidelines.
